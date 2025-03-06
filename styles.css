@@ -64,15 +64,6 @@ a {
 }
 
 /* Hero Section */
-#hero {
-    background: #2c3e50;
-    color: white;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
 
 .hero-content h2 {
     font-size: 3rem;
@@ -110,4 +101,54 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+    background-color: pink;
+    padding: 7px;
+    border-radius: 20px;
+}
+
+#hero {
+    padding:0px 0px;
+    background: white;
+    color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-image img{
+    border-radius: 100%;
+    float: none;
+}
+
+.hero-image{
+    display:flex;
+    height: 100vh;
+    width: 50%;
+    float:left;
+    background-color: whitesmoke;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content{
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 50%;
+    float:right;
+    justify-content:center;
+    align-items:start;
+    text-align:left;
+}
+
+#contact ul{
+    list-style-type: none;
 }
