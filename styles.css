@@ -1,0 +1,113 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: pink;
+    padding: 10px 20px;
+}
+
+.navcontainer{
+	overflow: hidden;
+	position: sticky;
+	top: 0;
+}
+
+.hanginggirl {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+
+.navbar .logo h1 {
+    color: white;
+    font-size: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 18px;
+	padding: 14px 3vw;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f39c12;
+	background-color: #334;
+}
+
+/* Hero Section */
+#hero {
+    background: #2c3e50;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+}
+
+/* Section Styling */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Projects Section */
+#projects .project {
+    margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
