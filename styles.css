@@ -1,4 +1,3 @@
-/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #fcf6bd; /* Light yellow background */
 }
 
 a {
@@ -15,26 +15,27 @@ a {
     color: inherit;
 }
 
-/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: pink;
+    background: #a9def9; /* Light blue background */
     padding: 10px 20px;
+    z-index: 1000;
 }
 
-.navcontainer{
-	overflow: hidden;
-	position: sticky;
-	top: 0;
+.navcontainer {
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .hanginggirl {
-  position: absolute;
-  top: 8px;
-  right: 16px;
-  font-size: 18px;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
 }
 
 .navbar .logo h1 {
@@ -52,29 +53,28 @@ a {
 }
 
 .nav-links a {
-    color: white;
+    color: white; /* White text */
     font-size: 18px;
-	padding: 14px 3vw;
+    padding: 14px 3vw;
     transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: #f39c12;
-	background-color: #334;
+    background-color: #d0f4de; /* Light green background on hover */
 }
-
-/* Hero Section */
 
 .hero-content h2 {
     font-size: 3rem;
     margin-bottom: 10px;
+    color: black; /* Black text */
 }
 
 .hero-content p {
     font-size: 1.5rem;
+    color: black; /* Black text */
+    margin-right:10%;
 }
 
-/* Section Styling */
 section {
     padding: 60px 20px;
     text-align: center;
@@ -83,37 +83,33 @@ section {
 section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+    color: black; /* Black text */
 }
 
 section p {
     font-size: 1rem;
     margin-bottom: 20px;
+    color: black; /* Black text */
 }
 
-/* Projects Section */
-#projects .project {
-    margin-bottom: 30px;
-}
-
-/* Footer */
 footer {
-    background: #333;
-    color: white;
+    background: #e4c1f9; /* Light purple background */
+    color: black;
     text-align: center;
     padding: 20px;
 }
 
-a{
+a {
     text-decoration: none;
-    color:black;
-    background-color: pink;
+    color: black;
+    background-color: #a9def9; /* Light blue background */
     padding: 7px;
     border-radius: 20px;
 }
 
 #hero {
-    padding:0px 0px;
-    background: white;
+    padding: 0px 0px;
+    background: #fcf6bd; /* Light yellow background */
     color: black;
     height: 100vh;
     display: flex;
@@ -122,33 +118,203 @@ a{
     text-align: center;
 }
 
-.hero-image img{
+.hero-image img {
     border-radius: 100%;
     float: none;
 }
 
-.hero-image{
-    display:flex;
+.hero-image {
+    display: flex;
     height: 100vh;
     width: 50%;
-    float:left;
-    background-color: whitesmoke;
+    float: left;
+    background-color: #fcf6bd; /* Light yellow background */
     justify-content: right;
     align-items: center;
     text-align: center;
 }
 
-.hero-content{
-    display:flex;
+.hero-content {
+    background-color: #d0f4de; /* Light green background */
+    display: flex;
     flex-direction: column;
     height: 100vh;
     width: 50%;
-    float:right;
-    justify-content:center;
-    align-items:start;
-    text-align:left;
+    float: right;
+    justify-content: center;
+    align-items: start;
+    text-align: left;
 }
 
-#contact ul{
+#contact ul {
     list-style-type: none;
+}
+
+#magikindex {
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: #ff99c8; /* Light pink background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.carousel-container {
+    position: relative;
+    width: auto;
+    max-width: 800px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    z-index: 1;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.carousel-slide img {
+    width: 40%;
+    z-index: 1;
+}
+
+#magikindex button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 30px;
+}
+
+#magikindex button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+#contact {
+    height: 98vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#contact h2{
+    font-size: 3rem;
+}
+#contact p{
+    font-size: 1.5rem;
+    margin-left:15%;
+    margin-right:15%;
+}
+#contact ul{
+    font-size: 1.5rem;
+    margin-left:15%;
+    margin-right:15%;
+}
+
+#magikindex p{
+    font-size: 1.5rem;
+    margin-left:15%;
+    margin-right:15%;
+}
+#magikindex h1{
+    font-size: 3rem;
+    margin-left:15%;
+    margin-right:15%;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links a {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #hero {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hero-image, .hero-content {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+    .hero-image img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .hero-content {
+        height: auto;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #magikindex{
+        height: auto;
+    }
+
+    .carousel-container{
+        width: 100%;
+    }
+
+    .carousel-slide img {
+        width: 100%;
+        height: auto;
+    }
+
+    #contact{
+        min-height: 100vh;
+        height: auto;
+        padding: 20px;
+    }
+
+    #contact h2, #magikindex h1 {
+        font-size: 2rem;
+    }
+
+    #contact p, #magikindex p, #contact ul {
+        font-size: 1rem;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
