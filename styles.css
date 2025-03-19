@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #fcf6bd; /* Light yellow background */
+    background-color: #fcf6bd;
 }
 
 a {
@@ -19,7 +19,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #a9def9; /* Light blue background */
+    background: #a9def9;
     padding: 10px 20px;
     z-index: 1000;
 }
@@ -53,25 +53,25 @@ a {
 }
 
 .nav-links a {
-    color: white; /* White text */
+    color: white;
     font-size: 18px;
     padding: 14px 3vw;
     transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    background-color: #d0f4de; /* Light green background on hover */
+    background-color: #d0f4de;
 }
 
 .hero-content h2 {
     font-size: 3rem;
     margin-bottom: 10px;
-    color: black; /* Black text */
+    color: black; 
 }
 
 .hero-content p {
     font-size: 1.5rem;
-    color: black; /* Black text */
+    color: black; 
     margin-right:10%;
 }
 
@@ -83,17 +83,17 @@ section {
 section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: black; /* Black text */
+    color: black;
 }
 
 section p {
     font-size: 1rem;
     margin-bottom: 20px;
-    color: black; /* Black text */
+    color: black;
 }
 
 footer {
-    background: #e4c1f9; /* Light purple background */
+    background: #e4c1f9;
     color: black;
     text-align: center;
     padding: 20px;
@@ -102,14 +102,14 @@ footer {
 a {
     text-decoration: none;
     color: black;
-    background-color: #a9def9; /* Light blue background */
+    background-color: #a9def9;
     padding: 7px;
     border-radius: 20px;
 }
 
 #hero {
     padding: 0px 0px;
-    background: #fcf6bd; /* Light yellow background */
+    background: #fcf6bd;
     color: black;
     height: 100vh;
     display: flex;
@@ -119,6 +119,7 @@ a {
 }
 
 .hero-image img {
+    width:60%;
     border-radius: 100%;
     float: none;
 }
@@ -128,14 +129,14 @@ a {
     height: 100vh;
     width: 50%;
     float: left;
-    background-color: #fcf6bd; /* Light yellow background */
+    background-color: #fcf6bd;
     justify-content: right;
     align-items: center;
     text-align: center;
 }
 
 .hero-content {
-    background-color: #d0f4de; /* Light green background */
+    background-color: #d0f4de;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -154,7 +155,7 @@ a {
     flex-direction: column;
     height: 100vh;
     width: 100%;
-    background-color: #ff99c8; /* Light pink background */
+    background-color: #ff99c8;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -263,6 +264,7 @@ a {
     #hero {
         flex-direction: column;
         height: auto;
+        min-height: 80%;
     }
 
     .hero-image, .hero-content {
